@@ -5,4 +5,4 @@ const [N, ...ARR] = require("fs")
   .split("\n");
 
 ARR.sort((a, b) => a - b);
-ARR.forEach((e) => console.log(e));
+console.log(ARR.join("\n"));
