@@ -27,7 +27,7 @@ function solution(N, WORDS) {
     return word1.localeCompare(word2);
   });
 
-  return WORDS.join("\n");
+  return WORDS;
 }
 
-console.log(solution(N, WORDS));
+console.log(solution(N, WORDS).join("\n"));
