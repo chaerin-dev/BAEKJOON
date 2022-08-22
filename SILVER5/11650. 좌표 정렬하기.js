@@ -9,7 +9,11 @@ const DOTS = INPUT_DOTS.map((e) => e.split(" ").map((e) => +e));
 
 function solution(N, DOTS) {
   DOTS.sort((dot1, dot2) => (dot1[0] !== dot2[0] ? dot1[0] - dot2[0] : dot1[1] - dot2[1]));
-  return DOTS.map((e) => e.join(" ")).join("\n");
+  return DOTS;
 }
 
-console.log(solution(N, DOTS));
+console.log(
+  solution(N, DOTS)
+    .map((e) => e.join(" "))
+    .join("\n")
+);
