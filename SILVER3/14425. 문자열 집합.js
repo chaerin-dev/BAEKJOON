@@ -1,12 +1,12 @@
-const [INPUT_N, INPUT_M, ...INPUT_STR] = require("fs")
+const [INPUT_N, INPUT_M, ...INPUT_ARR] = require("fs")
   .readFileSync(process.platform === "linux" ? "/dev/stdin" : "./input.txt")
   .toString()
   .trim()
   .split(/\s/);
 const N = +INPUT_N;
 const M = +INPUT_M;
-const STR_SET = INPUT_STR.slice(0, N);
-const STR_ARR = INPUT_STR.slice(N);
+const STR_SET = INPUT_ARR.slice(0, N);
+const STR_ARR = INPUT_ARR.slice(N);
 
 // 첫 번째 풀이: 브루트포스(시간 초과)
 // const solution = (N, M, STR_SET, STR_ARR) => {
