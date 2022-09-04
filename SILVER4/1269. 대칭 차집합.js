@@ -7,7 +7,7 @@ const [N, M, ...INPUT_ARR] = require("fs")
 const A = INPUT_ARR.slice(0, N);
 const B = INPUT_ARR.slice(N);
 
-// 첫 번째 풀이: 대칭 차집합 직접 구하기(통과)
+// // 첫 번째 풀이: 대칭 차집합 직접 구하기(통과)
 // const solution = (N, M, A, B) => {
 //   const [setA, setB] = [new Set(A), new Set(B)];
 //   return [...new Set([...A, ...B])].filter((e) => !(setA.has(e) && setB.has(e))).length;
