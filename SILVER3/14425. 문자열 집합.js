@@ -8,13 +8,13 @@ const M = +INPUT_M;
 const STR_SET = INPUT_ARR.slice(0, N);
 const STR_ARR = INPUT_ARR.slice(N);
 
-// 첫 번째 풀이: 브루트포스(시간 초과)
+// // 첫 번째 풀이: 브루트포스(시간 초과)
 // const solution = (N, M, STR_SET, STR_ARR) => {
 //   return STR_ARR.reduce((cnt, curStr) => cnt + STR_SET.includes(curStr), 0);
 // };
 
-// 두 번째 풀이: Set(통과)
-// Array.includes vs Set.has: https://www.tech-hour.com/javascript-performance-and-optimization
+// // 두 번째 풀이: Set(통과)
+// // Array.includes vs Set.has: https://www.tech-hour.com/javascript-performance-and-optimization
 // const solution = (N, M, STR_SET, STR_ARR) => {
 //   const strSet = new Set(STR_SET);
 //   return STR_ARR.reduce((cnt, curStr) => cnt + strSet.has(curStr), 0);
