@@ -8,7 +8,7 @@ const M = +INPUT_M;
 const POKEMONS = INPUT_ARR.slice(0, N);
 const QUESTIONS = INPUT_ARR.slice(N);
 
-// 첫 번째 풀이: 배열 이용(시간초과)
+// // 첫 번째 풀이: 배열 이용(시간초과)
 // const solution = (N, M, POKEMONS, QUESTIONS) => {
 //   return QUESTIONS.map((question) =>
 //     Number.isNaN(+question) ? POKEMONS.indexOf(question) + 1 : POKEMONS[question - 1]
