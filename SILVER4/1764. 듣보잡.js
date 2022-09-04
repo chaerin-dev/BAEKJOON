@@ -8,14 +8,14 @@ const M = +INPUT_M;
 const NO_LISTEN = INPUT_ARR.slice(0, N);
 const NO_SEE = INPUT_ARR.slice(N);
 
-// 첫 번째 풀이: 배열 이용(시간초과)
+// // 첫 번째 풀이: 배열 이용(시간초과)
 // const solution = (N, M, NO_LISTEN, NO_SEE) => {
 //   const NO_LISTEN_SEE = NO_SEE.filter((ppl) => NO_LISTEN.includes(ppl)).sort();
 //   return [NO_LISTEN_SEE.length, ...NO_LISTEN_SEE].join("\n");
 // };
 
-// 두 번째 풀이: 집합 이용(통과)
-// Array.includes vs Set.has: https://www.tech-hour.com/javascript-performance-and-optimization
+// // 두 번째 풀이: 집합 이용(통과)
+// // Array.includes vs Set.has: https://www.tech-hour.com/javascript-performance-and-optimization
 // const solution = (N, M, NO_LISTEN, NO_SEE) => {
 //   const noListenSet = new Set(NO_LISTEN);
 //   const NO_LISTEN_SEE = NO_SEE.filter((ppl) => noListenSet.has(ppl)).sort();
