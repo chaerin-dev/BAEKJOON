@@ -17,7 +17,7 @@ function solution(N, ARR) {
     for (let j = 0; j < ARR[i].length; j++) {
       // ARR[i][j]가 해당 줄의 가장 왼쪽 요소일 경우 ARR[i-1][j-1]이 이차원 배열 ARR의 범위를 벗어나므로 undefined
       // ARR[i][j]가 해당 줄의 가장 오른쪽 요소일 경우 ARR[i-1][j]가 이차원 배열 ARR의 범위를 벗어나므로 undefined
-      // 이런 경우에 undefined 대신 0값을 사용하기 위해 널 병합 연산자 ?? 이용
+      // 이런 경우에 undefined 대신 0값을 사용하기 위해 null 병합 연산자 ?? 이용
       ARR[i][j] += Math.max(ARR[i - 1][j - 1] ?? 0, ARR[i - 1][j] ?? 0);
     }
   }
