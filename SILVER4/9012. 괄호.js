@@ -24,9 +24,7 @@ function isVPS(str) {
 }
 
 function solution(ARR) {
-  const answer = [];
-  ARR.forEach((str) => answer.push(isVPS(str) ? "YES" : "NO"));
-  return answer;
+  return ARR.map((str) => (isVPS(str) ? "YES" : "NO"));
 }
 
 console.log(solution(ARR).join("\n"));
